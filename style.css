@@ -6,16 +6,16 @@
 }
 
 body {
-    background: #dc1fe3;
-    color: #ffff;
+    background: #fbf9fb;
+    /* color: #ffff; */
 }
 
-#header {
+#home {
 width: 100%;
 height: 100vh;
-background-image: url('./image/WhatsApp\ Image\ 2024-10-27\ at\ 07.17.55_0ccaf76b.jpg');
+background-image: url(image/WhatsApp\ Image\ 2024-10-27\ at\ 07.17.55_0ccaf76b.jpg);
 background-size: cover;
-background-position:center;
+background-position:center
 }
 
 .container {
@@ -43,3 +43,74 @@ margin: 10px 30px;
 list-style: none;
 text-decoration: none;
 }
+
+    #about {
+        padding: 80px 0;
+    }
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.about-col-1 {
+    flex-basis: 35%;
+}
+
+.about-col-1 img{
+    width: 100%;
+    border-radius: 15px;
+}
+
+.about-col-2 {
+    flex-basis: 60%;
+    
+}
+
+.sub-title {
+    font-size: 60px;
+    font-weight: 600;
+}
+
+.tab-titles {
+    display: flex;
+    margin: 20px;
+}
+
+.tab-links {
+    margin-right: 50px;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+    }
+
+    .tab-links::after {
+        content: "";
+        position: absolute;
+        background-color: #ff004f;
+        width: 0;
+        height: 3px;
+        bottom: -8px;
+        left: 0%;
+        transition: 0.5s;
+    }
+
+ .tab-links.active-link::after {
+    width: 50%;
+ }  
+
+ .tab-content ul li {
+    list-style: none;
+    margin: 10px 0;
+ }
+
+ .tab-content ul li span {
+    color: #b54769;
+    font-size: 15px;
+ }
+
+ .tab-content {
+    display: none;
+ }
